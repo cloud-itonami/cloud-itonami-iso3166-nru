@@ -1,0 +1,13 @@
+;; data/culture-tx.edn — DataScript tx-data derived from src/culture/facts.cljc
+;; `culture.facts/catalog` (ADR-2607171400 addendum 2, Wave 1 country-level).
+;; Same shape across every cloud-itonami-iso3166-* sibling. Do not hand-edit;
+;; regenerate from the catalog.
+
+[
+#:culture{:id "nru.dish.coconut-fish", :name "Coconut Fish", :country "NRU", :kind :dish, :summary "Traditional Nauruan dish of raw fish, often tuna, served in coconut milk with seasonings.", :url "https://en.wikipedia.org/wiki/Nauruan_cuisine", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "nru.dish.christmas-cake", :name "Nauruan Christmas Cake", :country "NRU", :kind :dish, :summary "Cake made from banana and coconut, traditionally eaten by Nauruans to celebrate Christmas.", :url "https://en.wikipedia.org/wiki/Nauruan_cuisine", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "nru.dish.coconut-mousse", :name "Coconut Mousse", :country "NRU", :kind :dish, :summary "Coconut-based dessert consumed by Nauruans on special occasions.", :url "https://en.wikipedia.org/wiki/Nauruan_cuisine", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "nru.craft.coconut-fibre-craft", :name "Nauruan coconut-fibre craft", :country "NRU", :kind :craft, :summary "Nauruan handicraft tradition in which craftsmen weave clothing and fans from coconut fibre and carve articles from coconut-palm wood, using geometric patterns.", :url "https://en.wikipedia.org/wiki/Culture_of_Nauru", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "nru.festival.angam-day", :name "Angam Day", :country "NRU", :kind :festival, :summary "Public holiday recognised in the Republic of Nauru, observed annually on October 26 to celebrate the Nauruan people's survival and population recovery.", :url "https://en.wikipedia.org/wiki/Angam_Day", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "nru.heritage.command-ridge", :name "Command Ridge", :country "NRU", :kind :heritage, :summary "Site of a Japanese communications bunker built during the World War II occupation of Nauru; rusted WWII guns and artillery remnants remain.", :url "https://en.wikipedia.org/wiki/Command_Ridge", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+]
