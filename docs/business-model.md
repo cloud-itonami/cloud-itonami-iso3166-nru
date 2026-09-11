@@ -18,7 +18,7 @@ Independent public-sector market-entry compliance for Nauru.
   Business Names), Business Licences Act 2017 (Registrar of Business
   Licences); Beneficial Ownership Act 2017 disclosure (no bright-line
   ownership percentage in the primary text read).
-- Procurement-agent gate (see `src/marketentry/facts.cljc`) --
+- Procurement-agent gate (see `src/marketentry/facts.cljk`) --
   independently recomputes whether a declared procurement operation's
   own value/funding source require an authorised agent under reg
   6(1)/(3), AND whether a group of engagements sharing a declared
