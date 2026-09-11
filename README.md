@@ -62,7 +62,7 @@ compliance department.
 | Governor | `:market-entry-compliance-governor` |
 | Ops | `:engagement/intake` · `:jurisdiction/assess` · `:filing/draft` · `:filing/submit` |
 | Flagship HARD checks | `procurement-agent-requirement-mismatch` (Public Finance (Control and Management) Regulations 2013 reg 6(1)/(3): a procurement operation valued over $3,000, or funded at any value by a foreign government/international institution, must be conducted by an authorised procurement agent -- independently recomputed from the engagement's own declared contract value/funding source, see `docs/adr/0001-architecture.md`) AND `artificial-division-violation` (Public Finance (Control and Management) Act 1997 s.15E(4): a public authority must not artificially divide a procurement operation to avoid a Regulations requirement -- independently recomputed by SUMMING the declared contract values of every engagement sharing a `:split-group` id, the first CROSS-ENTITY aggregate check in this family) |
-| Compliance catalog | `src/statute/facts.cljc` -- Corporations Act 1972, Business Names Registration Act 2018, Business Licences Act 2017, Beneficial Ownership Act 2017, Business Tax Act, Employment and Services Tax Act, Workers (Contracts of Service) Ordinance 1967 (title/year only -- honest gap, see ADR) |
+| Compliance catalog | `src/statute/facts.cljk` -- Corporations Act 1972, Business Names Registration Act 2018, Business Licences Act 2017, Beneficial Ownership Act 2017, Business Tax Act, Employment and Services Tax Act, Workers (Contracts of Service) Ordinance 1967 (title/year only -- honest gap, see ADR) |
 | Tests | `clojure -M:dev:test` |
 | Demo | `clojure -M:dev:run` |
 | Architecture ADR | [`docs/adr/0001-architecture.md`](docs/adr/0001-architecture.md) |
@@ -133,7 +133,7 @@ Alongside the market-entry / statute catalogs, this repo carries a
 `com-junkawasaki/root`) — national dishes, protected products, beverages,
 crafts, festivals and heritage sites for Nauru:
 
-- `src/culture/facts.cljc` — the catalog, source of truth (keyed by
+- `src/culture/facts.cljk` — the catalog, source of truth (keyed by
   uppercase ISO3, mirroring `statute.facts`).
 - `schema/culture.edn` — DataScript schema.
 - `data/culture-tx.edn` — derived DataScript tx-data (regenerated from
