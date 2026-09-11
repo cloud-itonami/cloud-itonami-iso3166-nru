@@ -63,8 +63,8 @@ compliance department.
 | Ops | `:engagement/intake` · `:jurisdiction/assess` · `:filing/draft` · `:filing/submit` |
 | Flagship HARD checks | `procurement-agent-requirement-mismatch` (Public Finance (Control and Management) Regulations 2013 reg 6(1)/(3): a procurement operation valued over $3,000, or funded at any value by a foreign government/international institution, must be conducted by an authorised procurement agent -- independently recomputed from the engagement's own declared contract value/funding source, see `docs/adr/0001-architecture.md`) AND `artificial-division-violation` (Public Finance (Control and Management) Act 1997 s.15E(4): a public authority must not artificially divide a procurement operation to avoid a Regulations requirement -- independently recomputed by SUMMING the declared contract values of every engagement sharing a `:split-group` id, the first CROSS-ENTITY aggregate check in this family) |
 | Compliance catalog | `src/statute/facts.cljk` -- Corporations Act 1972, Business Names Registration Act 2018, Business Licences Act 2017, Beneficial Ownership Act 2017, Business Tax Act, Employment and Services Tax Act, Workers (Contracts of Service) Ordinance 1967 (title/year only -- honest gap, see ADR) |
-| Tests | `clojure -M:dev:test` |
-| Demo | `clojure -M:dev:run` |
+| Tests | `kbb -M:dev:test` |
+| Demo | `kbb -M:dev:run` |
 | Architecture ADR | [`docs/adr/0001-architecture.md`](docs/adr/0001-architecture.md) |
 
 `:filing/submit` is never in any phase's `:auto` set -- human sign-off
